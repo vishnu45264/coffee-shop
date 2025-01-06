@@ -1,0 +1,218 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: url('coffeew2.webp') no-repeat center center fixed; /* Image Path */
+    background-size: cover; /* Ensures image covers the full screen */
+    color: #fff; /* White Text for contrast */
+    line-height: 1.6;
+}
+
+/* Add a Semi-Transparent Overlay for Better Text Visibility */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(49, 48, 48, 0.6); /* Darker Transparent Overlay */
+    z-index: -1; /* Places it behind content */
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(to right, #3e2723, #4e342e); /* Darker Coffee Gradient */
+    color: #ffe0b2; /* Soft Peach for header */
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 2.8em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #ffddc1; /* Soft Peach */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffe0b2;
+    text-decoration: underline;
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    margin: 30px auto;
+    padding: 25px;
+    background:  rgba(188, 186, 186, 0.9); /* Soft White with Transparency */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+}
+
+.intro h2 {
+    font-size: 2.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #4e342e; /* Dark Coffee Brown */
+}
+
+.intro p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #3e2723; /* Darker Coffee Brown */
+}
+
+.intro-image {
+    width: 90%;
+    max-width: 600px;
+    border-radius: 12px;
+    margin: 15px auto;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Preferences Section */
+.preferences, .payment, .preferences-summary {
+    background: rgba(188, 186, 186, 0.9); /* Light White Background with Transparency */
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.preferences h2, .payment h2, .preferences-summary h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #4e342e; /* Dark Coffee Brown */
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-size: 1em;
+    font-weight: 500;
+    color: #5d4037;
+}
+
+select, input[type="range"] {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 0.95em;
+}
+
+.milk-options {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.milk-options label {
+    font-size: 0.9em;
+    font-weight: normal;
+}
+
+button {
+    background: #6d4c41; /* Warm Brown */
+    color: #fff;
+    padding: 10px 25px;
+    font-size: 1em;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #5d4037; /* Darker Brown */
+}
+
+/* Preferences Summary */
+.preferences-summary {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.preferences-summary h3 {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.preferences-summary p {
+    font-size: 1.1em;
+    margin: 5px 0;
+    color: #5d4037;
+}
+
+/* Payment Section */
+.payment select {
+    margin-bottom: 15px;
+}
+
+/* Customer Satisfaction Styling for Order Summary */
+.order-summary {
+    background: #fff8e1; /* Soft Gold */
+    border: 1px solid #ffe0b2;
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.order-summary h2 {
+    font-size: 1.9em;
+    color: #4e342e;
+    margin-bottom: 10px;
+}
+
+.order-summary p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #6d4c41;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #4e342e;
+    color: #fff;
+    padding: 15px 0;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+}

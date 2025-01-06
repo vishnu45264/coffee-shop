@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Haven</title>
+    <link rel="stylesheet" href="coffee1.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Coffee Haven</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Intro Section -->
+    <section class="intro">
+        <h2>Start Your Day with a Perfect Cup of Coffee</h2>
+        <p>Choose your favorite coffee and tell us your preferences. We'll take care of the rest!</p>
+       
+    </section>
+
+    <!-- Preferences Section -->
+    <section class="preferences">
+        <h2>Tell Us Your Preferences</h2>
+        <form id="preferences-form">
+            <label for="coffee-type">Coffee Type:</label>
+            <select id="coffee-type">
+                <option value="espresso">Espresso</option>
+                <option value="latte">Latte</option>
+                <option value="cappuccino">Cappuccino</option>
+                <option value="americano">Americano</option>
+            </select>
+
+            <label for="cup-size">Cup Size:</label>
+            <select id="cup-size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+
+            <label for="sugar">Sugar Level:</label>
+            <input type="range" id="sugar" min="0" max="10" step="1" value="5">
+            <span id="sugar-value">5</span>
+
+            <label>Milk Preference:</label>
+            <div class="milk-options">
+                <label><input type="radio" name="milk" value="whole" checked> Whole</label>
+                <label><input type="radio" name="milk" value="skim"> Skim</label>
+                <label><input type="radio" name="milk" value="soy"> Soy</label>
+            </div>
+
+            <button type="button" onclick="submitPreferences()">Submit Preferences</button>
+        </form>
+    </section>
+  <!-- Preferences Summary Section -->
+<section id="preferences-summary" class="preferences-summary" style="display:none;">
+    <!-- Preferences will be displayed dynamically here -->
+</section>
+
+<section class="payment">
+    <h2>Payment Method</h2>
+    <form id="payment-form">
+        <label for="payment-method">Choose Payment Method:</label>
+        <select id="payment-method">
+            <option value="credit-card">Credit Card</option>
+            <option value="debit-card">Debit Card</option>
+            <option value="paypal">PayPal</option>
+            <option value="cash">Cash on Delivery</option>
+        </select>
+        <button type="button" onclick="confirmPayment()">Confirm Payment</button>
+    </form>
+</section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Coffee Haven. All Rights Reserved.</p>
+    </footer>
+
+    <script src="coffee2.js"></script>
+</body>
+</html>
